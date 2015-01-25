@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/victoriahoy/AndroidStudioProjects/MapLocation/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="location_string">Enter Location</string>
+    <string name="show_map_string">Show Map</string>
+</resources>
