@@ -62,7 +62,7 @@ public class ActivityTwo extends Activity {
 				// This function closes Activity Two
 				// Hint: use Context's finish() method
 
-				
+				finish();
 			
 			}
 		});
