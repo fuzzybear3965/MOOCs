@@ -61,9 +61,7 @@ public class ActivityTwo extends Activity {
 				// TODO:
 				// This function closes Activity Two
 				// Hint: use Context's finish() method
-
 				finish();
-			
 			}
 		});
 
@@ -85,10 +83,8 @@ public class ActivityTwo extends Activity {
 		// TODO:
 		// Update the appropriate count variable
 		// Update the user interface via the displayCounts() method
-
-
-		
-		
+        mCreate += 1;
+        displayCounts();
 	}
 
 	// Lifecycle callback methods overrides
@@ -102,7 +98,7 @@ public class ActivityTwo extends Activity {
 
 		// TODO:
 		// Update the appropriate count variable
-        mCreate = mCreate++;
+        mStart += 1;
 		// Update the user interface
         displayCounts();
 	}
@@ -116,7 +112,7 @@ public class ActivityTwo extends Activity {
 
 		// TODO:
 		// Update the appropriate count variable
-        mResume = mResume++;
+        mResume += 1;
 		// Update the user interface
         displayCounts();
 	}
@@ -146,7 +142,7 @@ public class ActivityTwo extends Activity {
 
 		// TODO:
 		// Update the appropriate count variable
-        mRestart = mRestart++;
+        mRestart += 1;
 		// Update the user interface
         displayCounts();
 	}
@@ -165,13 +161,13 @@ public class ActivityTwo extends Activity {
 		// TODO:
 		// Save counter state information with a collection of key-value pairs
 		// 4 lines of code, one for every count variable
-
+        Log.i(TAG, "Am saving the instance state.");
         savedInstanceState.putInt(CREATE_KEY, mCreate);
         savedInstanceState.putInt(RESTART_KEY, mRestart);
         savedInstanceState.putInt(RESUME_KEY, mResume);
         savedInstanceState.putInt(START_KEY, mStart);
 
-        super.onSaveInstanceState(savedInstanceState);
+    //    super.onSaveInstanceState(savedInstanceState);
 	}
 
 	// Updates the displayed counters
