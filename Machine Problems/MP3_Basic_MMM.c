@@ -1,4 +1,4 @@
-nclude <wb.h>
+#include <wb.h>
 
 #define wbCheck(stmt)                                                          \
   do {                                                                         \
@@ -56,6 +56,7 @@ int main(int argc, char **argv) {
   sizeofC = sizeof(float)*numCRows*numCColumns;
 
   //@@ Allocate the hostC matrix
+  wbcheck(malloc(sizeofC));
   wbTime_stop(Generic, "Importing data and creating memory on host");
 
   wbLog(TRACE, "The dimensions of A are ", numARows, " x ", numAColumns);
@@ -72,7 +73,7 @@ int main(int argc, char **argv) {
   wbTime_start(GPU, "Copying input memory to the GPU.");
   //@@ Copy memory to the GPU here
   wbCheck(cudaMemcpy(deviceA, hostA, sizeof(float)*numARows*numAColumns, cudaMemcpyHostToDevice);
-  wbCheck(cudaMemcpy(deviceB, hostB, sizeof(float)*numBRows*numBColumns,cudaMemcpyHostToDevice);
+  wbCheck(cudaMemcpy(deviceB, hostB, sizeof(float)*numBRows*numBColumns, cudaMemcpyHostToDevice);
 
   wbTime_stop(GPU, "Copying input memory to the GPU.");
 
@@ -82,6 +83,7 @@ int main(int argc, char **argv) {
   dim3 blockdim(256,256,1);
 
   wbTime_start(Compute, "Performing CUDA computation");
+  //@@ Launch the GPU Kernel here
   matrixMultiply <<< griddim, blockdim >>> (deviceA, deviceB, deviceC, numARows, numAColumns, numBRows, numBColumns, numCRows, numCColumns);
 
   cudaDeviceSynchronize();
