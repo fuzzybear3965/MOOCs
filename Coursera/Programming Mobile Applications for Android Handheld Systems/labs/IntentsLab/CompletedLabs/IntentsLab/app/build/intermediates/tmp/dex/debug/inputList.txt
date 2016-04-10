@@ -1,0 +1,2 @@
+C:\Users\John\Documents\JohnsPersonalFiles\Coursera\Programming Mobile Applications for Android Handheld Systems\labs\IntentsLab\CompletedLabs\IntentsLab\app\build\intermediates\classes\debug
+C:\Users\John\Documents\JohnsPersonalFiles\Coursera\Programming Mobile Applications for Android Handheld Systems\labs\IntentsLab\CompletedLabs\IntentsLab\app\build\intermediates\pre-dexed\debug\robotium-solo-5.2.1-af2282782d3e3ae01df88b460f934b92acc1190c.jar

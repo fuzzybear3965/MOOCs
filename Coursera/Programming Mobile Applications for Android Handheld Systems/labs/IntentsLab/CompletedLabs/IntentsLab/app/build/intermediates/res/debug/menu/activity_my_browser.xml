@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_settings"/>
+
+</menu><!-- From: file:/C:/Users/John/Documents/JohnsPersonalFiles/Coursera/Programming%20Mobile%20Applications%20for%20Android%20Handheld%20Systems/labs/IntentsLab/CompletedLabs/IntentsLab/app/src/main/res/menu/activity_my_browser.xml -->

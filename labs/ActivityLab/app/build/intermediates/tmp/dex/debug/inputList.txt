@@ -1,1 +1,0 @@
-C:\Users\John\Documents\JohnsPersonalFiles\Coursera\Programming Mobile Applications for Android Handheld Systems\labs\ActivityLab\app\build\intermediates\classes\debug
