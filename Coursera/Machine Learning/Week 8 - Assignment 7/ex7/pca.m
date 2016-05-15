@@ -14,18 +14,10 @@ S = zeros(n);
 % ====================== YOUR CODE HERE ======================
 % Instructions: You should first compute the covariance matrix. Then, you
 %               should use the "svd" function to compute the eigenvectors
-%               and eigenvalues of the covariance matrix. 
+%               and eigenvalues of the covariance matrix.
 %
 % Note: When computing the covariance matrix, remember to divide by m (the
 %       number of examples).
 %
-
-
-
-
-
-
-
-% =========================================================================
-
+[U, S, ~] = svd(m^-1 * X' * X);
 end
